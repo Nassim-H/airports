@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+
+
+    <h1>Bienvenue sur ma page d'accueil</h1>
+    </br>
+    {% block message %}<p>Voulez-vous savoir quel aéroports sont dessérvis par votre aéroport ?<span class="badge text-bg-success">New</span></p>{% endblock %}
+
+
+  <div class="d-flex align-items-center" style="height: 50vh;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-info" style="width: 25%"></div>
+</div>
+</div>
+
+</div>
+{% endblock %}

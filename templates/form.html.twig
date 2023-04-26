@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+
+
+<h1>{{ title }}</h1>
+
+<div class="container align-items-center">
+  <div class="row mx-auto mt-5 mb-4">
+
+<form method="POST" action="src/controller.php">
+  <div class="mb-3">
+    <label for="nom" class="form-label">Nom de la ville : </label>
+    <input type="text" class="form-control" id="nom" name="nom" aria-describedby="emailHelp">
+    <div id="nomHelp" class="form-text">Trouvez le code IATA de la ville ayant un aéroport (recherchez le nom de la ville <a target="_blank" href="https://www.world-airport-codes.com">ici</a>, cela vous donnera son code IATA).</div>
+    <div class="form-text text-warning text-bold"><b>Le code IATA ne comporte que 3 lettres !</b></div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">S'envoler</button>
+</form>
+</div>
+
+</div>
+
+
+{% endblock %}
+

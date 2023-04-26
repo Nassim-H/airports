@@ -1,0 +1,22 @@
+{
+    "name": "bugueur/entrainement",
+    "autoload": {
+        "psr-4": {
+            "Bugueur\\Entrainement\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nassim",
+            "email": "101125927+Nassim-H@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "league/route": "^5.1",
+        "laminas/laminas-diactoros": "^2.25",
+        "laminas/laminas-httphandlerrunner": "^2.6",
+        "league/container": "^4.2",
+        "twig/twig": "^3.5",
+        "guzzlehttp/guzzle": "^7.5"
+        }
+}
