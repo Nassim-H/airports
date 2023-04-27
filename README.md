@@ -16,4 +16,13 @@ I began the internship with reading documentations about technologies
 - https://docs.guzzlephp.org/en/stable/
 - https://getcomposer.org
 
+## Installation
+You need to do some commands to have the possibility to run the website :
 
+`composer install`
+
+To install what the program need, you find every what it needs in the composer.json
+
+`php -S localhost:8000`
+
+In order tu run the website locally you have to make this command, 8000 is an example port but you can choose an other
