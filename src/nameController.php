@@ -27,7 +27,6 @@ $client = new Client([
     'verify' => false,
     'headers' => [
     ],
-    'verify' => false   
 
 ]);
 
@@ -39,9 +38,18 @@ $json =json_decode($body, true);
 $lat = $json[0]['lat'] ;
 $lon = $json[0]['lon'];
 
+$_SESSION['latitude'] = $lat;
+$_SESSION['longitude'] = $lon;
+$_SESSION['nom'] = $nom;
+$_SESSION['country'] = $country;
+
+$country = $json[0]['address']['country'];
 
 $template = $twig->load('details.html.twig');
 
 echo $template->render([
-    
+    "nom" => $nom,
+    "longitude" => $lon,
+    "latitude" => $lat,
+    "country" => $country
 ]);

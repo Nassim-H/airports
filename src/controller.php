@@ -21,7 +21,9 @@ $nom = $_POST['nom'];
 
 session_start(); 
 
-
+if($_SESSION['iata']){
+    $nom = $_SESSION['iata'];
+}
 
 $client = new Client([
     'base_uri' => 'https://test.api.amadeus.com',

@@ -1,1 +1,17 @@
 {% extends 'base.html.twig' %}
+{% block content %}
+
+<h1>{{ nom }}</h1>
+
+
+<h2>{{ country }}</h2>
+
+<p>Longitude : {{ longitude }}</p>
+<p>Latitude : {{ latitude }}</p>
+
+<p>Vous vous demandez à quoi sert ces données hein, nous ce qu'on veut ce sont les aéroports desservis !!</p>
+
+<form method="POST" action="iataController.php">
+  <button type="submit" class="btn btn-primary">Prochaine étape ?</button>
+</form>
+{% endblock %}

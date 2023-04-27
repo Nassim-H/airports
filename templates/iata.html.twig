@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+
+<h1>{{ nom }}</h1>
+
+
+<h2>{{ iata }}</h2>
+
+
+<p>Vous vous demandez à quoi sert ces données hein, nous ce qu'on veut ce sont les aéroports desservis !!</p>
+<form method="POST" action="controller.php">
+  <button type="submit" class="btn btn-primary  mb-4">Maintenant on arrive au bout</button>
+</form>
+{% endblock %}
