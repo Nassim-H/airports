@@ -68,6 +68,19 @@ $router->map('GET', '/home', function (ServerRequestInterface $request) use ($tw
 });
 
 
+$router->map('GET', '/nom', function (ServerRequestInterface $request) use ($twig): ResponseInterface {
+    $template = $twig->load('nom.html.twig');
+    $html = $template->render([
+        'title' => 'Tu ne veux pas chercher le code IATA sur un autre site que celui-ci ? pas de problème, nouvelle mise à jour en cours...'
+    ]);
+    $response = new Response();
+    $response->getBody()->write($html);
+
+    return $response;
+});
+
+
+
 $response = $router->dispatch($request);
 
 // send the response to the browser
