@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-CITGmnv6pI7PhvwRfR/xwQ6L/yg6Ux9E3BMSiHm7xf5izpgC5o5IFaH5sTfNY6+SZUwS0dd+60lmIhIdmEn0oA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha384-9ijS9XCBctne4sz6nRVE6fYn6JZUx27M+3/qpCFo0P/14y9X+ctUdaw0N4N6U0J6" crossorigin="anonymous"></script>
 
     <title>{% block title %}{% endblock %} - Mon site</title>
 </head>
-<body>
+<body  class="bg-dark text-light">
 
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -20,7 +20,7 @@
     </a>
 <ul class="nav nav-underline ">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Mon site</a>
+    <a class="nav-link active" aria-current="page" href="/">Mon site</a>
   </li>
   <li class="nav-item">
     <a class="nav-link " aria-current="page" href="{{ base_url }}/home">Accueil</a>
@@ -40,10 +40,13 @@
 
 
     <div class="container">
-        {% block content %}{% endblock %}
+      {% block content %}
+ 
+
+{% endblock %}
     </div>
 
-    <footer class=" fixed-bottom bg-light text-center">
+    <footer class=" fixed-bottom bg-dark text-center">
         <div class="container p-4">
             <p>&copy; 2023. Mon site.</p>
         </div>
