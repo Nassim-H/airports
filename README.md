@@ -2,9 +2,9 @@
 A project PHP from scratch with Guzzle, League/Route, Bootstrap, Twig.
 The purpose of this project is to learn League/Route and Guzzle which requests API.
 
-## The origin of this project what it's utility
+## The origin of this project and the purpose
 
-I began a internship where I need to developp e microservice which use an API. The technologies are these (Guzzle, League/route,Bootsrap for the view and twig). The API uses Oauth 2 so I learned about this and choose an API which use this too.
+I began a internship where I need to developp a microservice which use an API. The technologies are these (Guzzle, League/route,Bootsrap for the view and twig). The API uses Oauth 2 so I learned about this and choose an API which use this to know how it really works.
 The utility of this website is to know destinations of an airport by giving the IATA code of the airport.
 
 ## Documentation 
