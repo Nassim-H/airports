@@ -29,3 +29,5 @@ In order tu run the website locally you have to make this command, 8000 is an ex
 
 ## How i used the technologies and difficulties I met
 
+
+It was difficult to start because I never did a real project in pure PHP.
