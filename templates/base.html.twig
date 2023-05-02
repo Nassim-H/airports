@@ -7,8 +7,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha384-9ijS9XCBctne4sz6nRVE6fYn6JZUx27M+3/qpCFo0P/14y9X+ctUdaw0N4N6U0J6" crossorigin="anonymous"></script>
 
     <title>{% block title %}{% endblock %} - Mon site</title>
+    <style>
+		#background-image {
+			background-image: url('img\tableau_bord.jpg');
+			background-size: cover;
+			width: 100vw;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+    body {
+  background-color: black;
+}
+	</style>
 </head>
-<body  class="bg-dark text-light">
+<body  class="text-light">
 
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,19 +52,30 @@
 </div>
 </nav>
 
-
-    <div class="container">
       {% block content %}
- 
+  
+{# <div style="position: relative;">
+  <img src="img\tableau_bord.jpg" alt="Image à la une" style="width: 100%; height: 100vh; object-fit: cover;">
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+    <h1 style="color: #007bff" ><strong>Montez à bord</strong></h1>
+    <p>Trouvez les destinations que votre aéroport relie</p>
+  </div>
+</div> #}
 
-{% endblock %}
-    </div>
+<div style="position: relative; height: 100vh; background-image: url('img/tableau_bord.jpg'); background-size: cover;">
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+    <h1 style="font-size: 4em; color: #fff"><strong>Montez à bord</strong></h1>
+    <p style="font-size: 1.5em; color: #fff;">Trouvez les destinations que votre aéroport relie</p>
+    <a href="{{ base_url }}/form"><button style="font-size: 1.2em; padding: 8px 30px; background-color: #007bff; color: #fff; border: none; border-radius: 30px; ">S'envoler</button></a>
+  </div>
+</div>
 
-    <footer class=" fixed-bottom bg-dark text-center">
-        <div class="container p-4">
-            <p>&copy; 2023. Mon site.</p>
-        </div>
-    </footer>
+    {% endblock %}
+    <footer style=" padding: 20px; position: fixed; bottom: 0; width: 100%;" class="text-center" >
+    <div class="container">
+    <p><strong>&copy; 2023. Mon site.</strong></p>
+  </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

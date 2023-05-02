@@ -17,3 +17,4 @@ I began the internship with reading documentations about technologies
 - https://getcomposer.org
 
 
+## How i used the technologies and difficulties I met

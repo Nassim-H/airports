@@ -1,10 +1,11 @@
 {% extends 'base.html.twig' %}
-
 {% block title %}Accueil{% endblock %}
+
 
 {% block content %}
 
 
+<div class="container">
 
     <h1 class="fade-in">Bienvenue sur ma page d'accueil</h1>
     </br>
@@ -12,13 +13,15 @@
 
 
   <div class="d-flex align-items-center" style="height: 50vh;">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar bg-info" style="width: 25%"></div>
-</div>
-</div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+         <div class="progress-bar bg-info" style="width: 25%"></div>
+        </div>
+      </div>
 
+    </div>
+  </div>
 </div>
 {% endblock %}

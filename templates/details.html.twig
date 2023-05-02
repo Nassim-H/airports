@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block content %}
-
+<div class="container">
 <h1 class="mb-3">{{ nom }}</h1>
 
 
@@ -14,4 +14,5 @@
 <form method="POST" action="iataController.php">
   <button type="submit" class="btn btn-primary">Prochaine étape ?</button>
 </form>
+</div>
 {% endblock %}

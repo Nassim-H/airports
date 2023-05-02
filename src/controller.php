@@ -82,6 +82,10 @@ $template = $twig->load('index.twig');
 echo $template->render([
     'meta'=>$meta,
     'data' => $data,
-    'nom' => $nom,
+    'nom' => $nom,  
     'title' => "Liste des aéroports desservis"
 ]);
+
+if($_SESSION['iata']){
+    $_SESSION['iata'] = null;
+}

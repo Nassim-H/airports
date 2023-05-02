@@ -2,16 +2,18 @@
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
 
-<h1>{{ title }}</h1>
 
 
   <div class="d-flex align-items-center" style="height: 60vh;">
+
   <div class="container">
+    <h1>{{ title }}</h1>
+
     <div class="row justify-content-center">
 
 <form method="POST" action="src/connexion.php">
 <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="submit" class="btn btn-primary mb-3">S'envoler !</button>
+        <button type="submit" class="btn btn-primary mb-3">Demander l'accès</button>
 </div>
 </form>
 
