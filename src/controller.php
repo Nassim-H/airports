@@ -47,7 +47,7 @@ try {
         ]);
         
         echo $template->render([
-            "error_message" => "La syntaxe khoya. Tu n's pas lu le petit texte en dessous !"
+            "error_message" => "La syntaxe khoya. Tu n'as pas lu le petit texte en dessous !"
         ]); 
     }
     else{
