@@ -55,4 +55,5 @@ The biggest difficulty for me it was to make an useful website. The first versio
 
 ## What feature we can add to the website
 
-There is a thing I haven't done yet
+There is a thing I haven't done yet is to propose airports in a city and give the choice to the visitor to select one. Like New York or Paris where there are at least 2 airports. 
+It's a feature that can be good to know the count of airport by city for example too.
